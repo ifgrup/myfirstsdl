@@ -17,7 +17,7 @@ int main(int argc, const char * argv[])
 {
     std::cout << "game init attempt...\n";
   
-    if(TheGame::Instance()->init("RR Game", 100, 100, 640, 480,false))
+    if(TheGame::Instance()->init("RR Game", 100, 100, 800, 600,true))
     {
         std::cout << "game init success!\n";
         while(TheGame::Instance()->running())
@@ -36,18 +36,5 @@ int main(int argc, const char * argv[])
     TheGame::Instance()->clean();
     return 0;
     
-    /*
-    g_game=new Game();
-    g_game->init("vamos que nos vamos", 100,100, 640, 480, true);
-    
-    while (g_game->running())
-    {
-        g_game->handleEvents();
-        g_game->update();
-        g_game->render();
-        SDL_Delay(10); // add the delay
-    }
-    g_game->clean();
-    return 0;*/
-}
+   }
 

@@ -12,11 +12,7 @@ Player::Player(const LoaderParams* pParams) :SDLGameObject(pParams)
 {
     
 }
-/*
-void Player::load(int x, int y, int width, int height, std::string textureID)
-{
-    GameObject::load(x, y, width, height, textureID);
-}*/
+
 
 void Player::draw()
 {

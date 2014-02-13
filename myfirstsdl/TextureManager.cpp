@@ -98,15 +98,12 @@ bool TextureManager:: load(std::string fileName,std::string id,SDL_Renderer* pRe
     
     printf("Pixel Color -> R: %d,  G: %d,  B: %d,  A: %d\n", red, green, blue, alpha);
     
-    SDL_LockSurface(pTempSurface);
-   
-    pTempSurface->format->Amask = 0xFF000000;
-    pTempSurface->format->Ashift = 24;
+    
     // SDL_SetColorKey(pTempSurface, SDL_TRUE, SDL_MapRGB( pTempSurface->format, 128, 121, 221 ) );
     
     //SDL_SetColorKey(pTempSurface, SDL_RLEACCEL,SDL_MapRGB( pTempSurface->format,128 ,121 , 221 ));
     
-    SDL_UnlockSurface(pTempSurface);
+   
     SDL_Texture* pTexture =SDL_CreateTextureFromSurface(pRenderer, pTempSurface);
     SDL_FreeSurface(pTempSurface);
     // everything went ok, add the texture to our list
@@ -128,12 +125,12 @@ void TextureManager::draw(std::string id, int x, int y, int width, int height, S
     srcRect.x = 0;
     srcRect.y = 0;
     
-    // Src->mismo tamaño en src que en destino
+    // same size
     //srcRect.w = destRect.w = width;
     //srcRect.h = destRect.h = height;
 
     
-    // doblamos el tamaño al mostrarlo
+    // show twice the  texture size
     srcRect.w = width;
     srcRect.h = height;
     destRect.w = width*2;

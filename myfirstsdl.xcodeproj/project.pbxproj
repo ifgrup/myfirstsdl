@@ -17,7 +17,6 @@
 		78BB2CD9185F7B8B00A0843D /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78BB2CD8185F7B8B00A0843D /* Game.cpp */; };
 		78BB2CE4185FC0B100A0843D /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78BB2CE3185FC0B100A0843D /* SDL2_image.framework */; };
 		78BB2CED186071D800A0843D /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78BB2CEC186071D800A0843D /* TextureManager.cpp */; };
-		78C15AC118AA80850058D781 /* RrGameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78C15ABF18AA80850058D781 /* RrGameObject.cpp */; };
 		78FEAA22185532E8009FB216 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FEAA21185532E8009FB216 /* SDL2.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,8 +57,6 @@
 		78BB2CEA186069BA00A0843D /* animate-alpha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animate-alpha.png"; sourceTree = "<group>"; };
 		78BB2CEB18606DDD00A0843D /* TextureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureManager.h; sourceTree = "<group>"; };
 		78BB2CEC186071D800A0843D /* TextureManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextureManager.cpp; sourceTree = "<group>"; };
-		78C15ABF18AA80850058D781 /* RrGameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RrGameObject.cpp; sourceTree = "<group>"; };
-		78C15AC018AA80850058D781 /* RrGameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RrGameObject.h; sourceTree = "<group>"; };
 		78CA957D18ABC4CB002741B1 /* 51994.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 51994.png; sourceTree = "<group>"; };
 		78CA95F718AC4E1F002741B1 /* enemy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy.png; sourceTree = "<group>"; };
 		78FEAA21185532E8009FB216 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../SDL2.framework; sourceTree = "<group>"; };
@@ -117,8 +114,6 @@
 				786F92A7189A796900617CAE /* LoaderParams.h */,
 				78849C9C18AA58B100FC5368 /* SDLGameObject.cpp */,
 				78849C9D18AA58B100FC5368 /* SDLGameObject.h */,
-				78C15ABF18AA80850058D781 /* RrGameObject.cpp */,
-				78C15AC018AA80850058D781 /* RrGameObject.h */,
 			);
 			path = myfirstsdl;
 			sourceTree = "<group>";
@@ -195,7 +190,6 @@
 				788BC8FC18552FD7002C26FC /* main.cpp in Sources */,
 				78BB2CD9185F7B8B00A0843D /* Game.cpp in Sources */,
 				78BB2CED186071D800A0843D /* TextureManager.cpp in Sources */,
-				78C15AC118AA80850058D781 /* RrGameObject.cpp in Sources */,
 				7884156618980D6D00B200A8 /* Player.cpp in Sources */,
 				78849C9E18AA58B100FC5368 /* SDLGameObject.cpp in Sources */,
 				786F92A8189A796900617CAE /* LoaderParams.cpp in Sources */,
